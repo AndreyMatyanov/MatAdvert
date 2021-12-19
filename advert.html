@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>MatAdverts</title>
+</head>
+    <body>
+        <script src="assets/js/script.js"></script>
+
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo"><img src="/assets/img/logo.svg" alt="logo"></div>
+                    <div class="header__center">
+                        <div class="header__center__info">
+                            <div class="header__center__info__item">
+                                <img src="/assets/img/deliver.svg" alt="deliver">
+                                <p class="header__center__info__item__text">ПЛАТНАЯ ДОСТАВКА ОТ КОМПАНИИ</p>
+                            </div>
+                            <div class="header__center__info__item">
+                                <img src="/assets/img/vip.svg" alt="vip">
+                                <p class="header__center__info__item__text">VIP-ОБЪЯВЛЕНИЕ ОТ 5Р В ДЕНЬ</p>
+                            </div>
+                        </div>
+                        <div class="header_center__info__search">
+                            <input type="text" class="header__center__info__search__input">
+                        </div>
+                    </div>
+                    <div class="header__account">
+                        
+                        <!-- Button to open the modal login form -->
+                        <button onclick="document.getElementById('id01').style.display='block'" class="loginbtnopen">Войти</button>
+
+                        <!-- The Modal -->
+                        <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                        class="close" title="Close Modal">&times;</span>
+
+                        <!-- Modal Content -->
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container-login">
+                            <label for="uname"><b>Логин</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required class="loginInput">
+
+                            <label for="psw"><b>Пароль</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required class="passwordInput">
+
+                            <button type="submit" class="loginbtn">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                            </label>
+                            </div>
+
+                            <div class="container-login" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+                            <span class="psw">Забыть <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav__list">
+                        <a href="/catalog.html" class="nav__link">ВСЕ КАТЕГОРИИ</a>
+                        <a href="/index.html" class="nav__link">ГЛАВНАЯ</a>
+                        <a href="" class="nav__link">ДОСТАВКА</a>
+                        <a href="" class="nav__link">КОНТАКТЫ</a> 
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <section class="advertpage">
+            <div class="container">
+                <div class="catalog__link">
+                    <a href="index.html">Главная</a> / <a href="/catalog.html">Каталог</a>
+                 </div>
+                 <div class="advertpage_content">
+
+
+
+                    <div id="slider_bl">
+                        <div class="wrapper">
+                            <input checked type=radio name="slider" id="slide1" />
+                            <input type=radio name="slider" id="slide2" />
+                            <input type=radio name="slider" id="slide3" />
+                            <input type=radio name="slider" id="slide4" />
+                            <div class="slider-wrapper">
+                                <div class=inner>
+                                <article>
+                                    <div class="info top-left">
+                                    <h3>Слайдер 1</h3></div>
+                                    <img src="https://yams.kufar.by/api/v1/kufar-ads/images/78/7821005735.jpg?rule=gallery" />
+                                </article>
+                                <article>
+                                    <div class="info bottom-right">
+                                    <h3>Слайдер 2</h3></div>
+                                    <img src="https://yams.kufar.by/api/v1/kufar-ads/images/78/7848855520.jpg?rule=gallery" />
+                                </article>
+                                <article>
+                                    <div class="info bottom-left">
+                                    <h3>Слайдер 3</h3></div>
+                                    <img src="https://yams.kufar.by/api/v1/kufar-ads/images/78/7897715606.jpg?rule=gallery" />
+                                </article>
+                                <article>
+                                    <div class="info top-right">
+                                    <h3>Слайдер 4</h3></div>
+                                    <img src="https://yams.kufar.by/api/v1/kufar-ads/images/78/7806238925.jpg?rule=gallery" />
+                                </article>
+                                </div>
+                            </div>
+                            <div class="slider-prev-next-control">
+                                <label for=slide1></label>
+                                <label for=slide2></label>
+                                <label for=slide3></label>
+                                <label for=slide4></label>
+                            </div>
+                            <div class="slider-dot-control">
+                                <label for=slide1></label>
+                                <label for=slide2></label>
+                                <label for=slide3></label>
+                                <label for=slide4></label>
+                            </div>
+                            </div>
+                    </div>
+
+
+
+                     <div class="advertpage__description">
+                        <div class="advertpage__description__maininfo-and-btn">
+                            <div class="advertpage__description__maininfo">
+                                <h2>Коттедж в г.Минск</h2>
+                                <h2>2 500 500р</h2>
+
+                                <div class="advertpage__authorlink">
+                                    <a href="/profile.html">Андрей Мартьянов</a>
+                                </div>
+                            </div>
+                            <div class="advertpage__description__btns">
+                                <button class="advertpage__btn__contact">
+                                    Контанты
+                                </button>
+                                <button class="advertpage__btn__report">
+                                    Пожаловаться
+                                </button>
+                                <button class="advertpage_-btn__deliver">
+                                    Оформить заказ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="advertpage__description__content">
+                            <h4>Описание</h4>
+                            <p>
+                                Таунхауз в престижной коттеджной застройке Минска, 2-я линия от озера Дрозды, под чистовую отделку с центральными коммуникациями. Дом построен из кирпича, утеплен, фасад обложен клинкерным кирпичом ручной формовки пр-во Бельгия, крыша натуральная черепица пр-во Бельгия, в доме сделана система "Умный дом", приточно-вытяжная вентиляция, система видеонаблюдения. Договор на оказание риэлтерских услуг № 104/1 от 09.06.2021 года
+                            </p>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_cont">
+                    <div class="logo__and__text">
+                        <div class="footer_logo">
+                            <img src="/assets/img/footer__logo.svg" alt="">
+                        </div>
+                        <div class="footer__text">
+                            <p>“Изначально я делал этот проект для того, чтобы получить 5 по курсовому проекту, но после я заработал на нём миллионы.” (c) Андрей Матьянов</p>
+                        </div>
+                    </div> 
+                    <div class="footer__links">
+                        <ul>
+                            <h4 class="footer__title"> О КОМПАНИИ</h4>
+                            <li class="footer__link__item">    
+                                <a href="" class="footer__links__item__link">Доставка</a>
+                            </li>
+                            <li class="footer__link__item">    
+                                <a href="" class="footer__links__item__link">Оплата</a>
+                            </li>
+                            <li class="footer__link__item">    
+                                <a href="" class="footer__links__item__link">Контакты</a>
+                            </li>
+                            <li class="footer__link__item">    
+                                <a href="" class="footer__links__item__link">Возврат</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__links">
+                        <ul>
+                            <h4 class="footer__title"> КОНТАКТЫ</h4>
+                            <li class="footer__link__item">    
+                                Могилев, ул.Ленинсская д.106
+                            </li>
+                            <li class="footer__link__item">    
+                                Минск, пл.Мира д.15
+                            </li>
+                            <li class="footer__link__item">    
+                                8(229)15-88-935
+                            </li>
+                            <li class="footer__link__item">    
+                                MatShop@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="footer__dop__cont">
+                    <p>(c) 2021 - Наш лучший магазин</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

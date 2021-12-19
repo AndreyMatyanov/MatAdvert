@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>MatAdverts</title>
+    </head>
+    <body>
+        <script src="assets/js/script.js"></script>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo"><img src="/assets/img/logo.svg" alt="logo"></div>
+                    <div class="header__center">
+                        <div class="header__center__info">
+                            <div class="header__center__info__item">
+                                <img src="/assets/img/deliver.svg" alt="deliver">
+                                <p class="header__center__info__item__text">ПЛАТНАЯ ДОСТАВКА ОТ КОМПАНИИ</p>
+                            </div>
+                            <div class="header__center__info__item">
+                                <img src="/assets/img/vip.svg" alt="vip">
+                                <p class="header__center__info__item__text">VIP-ОБЪЯВЛЕНИЕ ОТ 5Р В ДЕНЬ</p>
+                            </div>
+                        </div>
+                        <div class="header_center__info__search">
+                            <input type="text" class="header__center__info__search__input">
+                        </div>
+                    </div>
+                    <div class="header__account">
+                        
+                        <!-- Button to open the modal login form -->
+                        <button onclick="document.getElementById('id01').style.display='block'" class="loginbtnopen">Войти</button>
+
+                        <!-- The Modal -->
+                        <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                        class="close" title="Close Modal">&times;</span>
+
+                        <!-- Modal Content -->
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container-login">
+                            <label for="uname"><b>Логин</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required class="loginInput">
+
+                            <label for="psw"><b>Пароль</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required class="passwordInput">
+
+                            <button type="submit" class="loginbtn">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                            </label>
+                            </div>
+
+                            <div class="container-login" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+                            <span class="psw">Забыть <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav__list">
+                        <a href="" class="nav__link">ВСЕ КАТЕГОРИИ</a>
+                        <a href="" class="nav__link">ГЛАВНАЯ</a>
+                        <a href="" class="nav__link">ДОСТАВКА</a>
+                        <a href="" class="nav__link">КОНТАКТЫ</a> 
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <section class=section>
+            <div class="container">
+                <div class="category">
+                    <div class="table-category">
+                        <ul class="table__category__list">
+                            <li class="table__category__list__item">
+                                <div class="table__category__list__item__cont" onmouseover="currentSlide(1)" >
+                                    <img src="/assets/img/main.svg" alt="" class="table__category__list__item__img">
+                                    <a href="catalog.html" class="table__category__list__item__text" > Главная</a>
+                                </div>
+                            </li>
+                            <li class="table__category__list__item">
+                                <div class="table__category__list__item__cont" onmouseover="currentSlide(2)">
+                                    <img src="/assets/img/vip.svg" alt="" class="table__category__list__item__img">
+                                    <a href="catalog.html" class="table__category__list__item__text">VIP</a>
+                                </div>
+                            </li>
+                            <li class="table__category__list__item">
+                                <div class="table__category__list__item__cont" onmouseover="currentSlide(3)">
+                                    <img src="/assets/img/mashine.svg" alt="" class="table__category__list__item__img">
+                                    <a href="catalog.html" class="table__category__list__item__text"> Техника</a>
+                                </div>
+                            </li>
+                            <li class="table__category__list__item">
+                                <div class="table__category__list__item__cont" onmouseover="currentSlide(4)">
+                                    <img src="/assets/img/clothe.svg" alt="" class="table__category__list__item__img">
+                                    <a href="catalog.html" class="table__category__list__item__text"> Одежда</a>
+                                </div>
+                            </li>
+                            <li class="table__category__list__item">
+                                <div class="table__category__list__item__cont" onmouseover="currentSlide(5)">
+                                    <img src="/assets/img/furniture.svg" alt="" class="table__category__list__item__img"> 
+                                    <a href="catalog.html" class="table__category__list__item__text">Мебель</a>
+                                </div>
+                            </li>
+                            <li class="table__category__list__item">
+                                <div class="table__category__list__item__cont" onmouseover="currentSlide(6)">
+                                    <img src="/assets/img/clothe.svg" alt="" class="table__category__list__item__img">
+                                    <a href="catalog.html" class="table__category__list__item__text"> Авто и транспорт</a>
+                                </div>
+
+                            </li>
+                            <li class="table__category__list__item">
+                                <div class="table__category__list__item__cont" onmouseover="currentSlide(7)">
+                                    <img src="/assets/img/allForHome.svg" alt="" class="table__category__list__item__img">
+                                    <a href="catalog.html" class="table__category__list__item__text"> Всё для дома</a>
+                                </div>
+                            </li>
+                            <li class="table__category__list__item">
+                                <div class="table__category__list__item__cont" onmouseover="currentSlide(8)">
+                                    <img src="/assets/img/property.svg" alt="" class="table__category__list__item__img">
+                                    <a href="catalog.html" class="table__category__list__item__text"> Недвижимость</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide">
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 8</div>
+                                <img src="/assets/img/img1.jpg" style="width:100%" class="mySlideImg">
+                            </div>
+                        
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 8</div>
+                                <img src="/assets/img/img2.jpg" style="width:100%" class="mySlideImg">
+                            </div>
+                        
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 8</div>
+                                <img src="/assets/img/img3.jpg" style="width:100%" class="mySlideImg">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 8</div>
+                                <img src="/assets/img/img4.jpg" style="width:100%" class="mySlideImg">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <div class="numbertext">5 / 8</div>
+                                <img src="/assets/img/img5.jpg" style="width:100%" class="mySlideImg">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">6 / 8</div>
+                                <img src="/assets/img/img6.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">7 / 8</div>
+                                <img src="/assets/img/img7.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">8 / 8</div>
+                                <img src="/assets/img/img8.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="adrets__section">
+            <div class="container">
+                <div class="new__adverts">
+                    <div class="typeOfAdverts">
+                        <p class="name-of-adverts">НОВОЕ ОБЪЯВЛЕНИЕ</p>
+                        <a href="catalog.html" class="link__adverts">Показать ещё</a>
+                    </div>
+                    <div class="advert__table">
+                        <div class="advert">
+                            <img src="/assets/img/advert/advert1.png" alt="advert" class="advertImg">
+                            <div>
+                                <div class="link__advert">
+                                    <a href="/advert.html">Древние укры</a>
+                                </div>
+                                <div class="cost__advert">
+                                    <b>150р</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advert">
+                            <img src="/assets/img/advert/advert2.jpg" alt="" class="advertImg">
+                            <div>
+                                <div class="link__advert">
+                                    <a href="/advert.html">Древние укры</a>
+                                </div>
+                                <div class="cost__advert">
+                                    <b>150р</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advert">
+                            <img src="/assets/img/advert/advert3.jpg" alt="" class="advertImg">
+                            <div>
+                                <div class="link__advert">
+                                    <a href="/advert.html">Древние укры</a>
+                                </div>
+                                <div class="cost__advert">
+                                    <b>150р</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advert">
+                            <img src="/assets/img/advert/advert4.jpg" alt=""  class="advertImg">
+                            <div>
+                                <div class="link__advert">
+                                    <a href="/advert.html">Древние укры</a>
+                                </div>
+                                <div class="cost__advert">
+                                    <b>150р</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="vip__adverts">
+                    <div class="typeOfAdverts">
+                        <p class="name-of-adverts">VIP-ОБЪЯВЛЕНИЕ</p>
+                        <a href="/catalog.html" class="link__adverts">Показать ещё</a>
+                    </div>
+
+                    <div class="advert__table">
+                        <div class="advert">
+                            <img src="/assets/img/advert/advert4.jpg" alt="advert" class="advertImg">
+                            <div>
+                                <div class="link__advert">
+                                    <a href="/advert.html">Древние укры</a>
+                                </div>
+                                <div class="cost__advert">
+                                    <b>150р</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advert">
+                            <img src="/assets/img/advert/advert5.jpg" alt="" class="advertImg">
+                            <div>
+                                <div class="link__advert">
+                                    <a href="/advert.html">Древние укры</a>
+                                </div>
+                                <div class="cost__advert">
+                                    <b>150р</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advert">
+                            <img src="/assets/img/advert/advert6.jpg" alt="" class="advertImg">
+                            <div>
+                                <div class="link__advert">
+                                    <a href="/advert.html">Древние укры</a>
+                                </div>
+                                <div class="cost__advert">
+                                    <b>150р</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advert">
+                            <img src="/assets/img/advert/advert7.jpg" alt="" class="advertImg">
+                            <div>
+                                <div class="link__advert">
+                                    <a href="/advert.html">Древние укры</a>
+                                </div>
+                                <div class="cost__advert">
+                                    <b>150р</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_cont">
+                    <div class="logo__and__text">
+                        <div class="footer_logo">
+                            <img src="/assets/img/footer__logo.svg" alt="">
+                        </div>
+                        <div class="footer__text">
+                            <p>“Изначально я делал этот проект для того, чтобы получить 5 по курсовому проекту, но после я заработал на нём миллионы.” (c) Андрей Матьянов</p>
+                        </div>
+                    </div> 
+                    <div class="footer__links">
+                        <ul>
+                            <h4 class="footer__title"> О КОМПАНИИ</h4>
+                            <li class="footer__link__item">    
+                                <a href="" class="footer__links__item__link">Доставка</a>
+                            </li>
+                            <li class="footer__link__item">    
+                                <a href="" class="footer__links__item__link">Оплата</a>
+                            </li>
+                            <li class="footer__link__item">    
+                                <a href="" class="footer__links__item__link">Контакты</a>
+                            </li>
+                            <li class="footer__link__item">    
+                                <a href="" class="footer__links__item__link">Возврат</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__links">
+                        <ul>
+                            <h4 class="footer__title"> КОНТАКТЫ</h4>
+                            <li class="footer__link__item">    
+                                Могилев, ул.Ленинсская д.106
+                            </li>
+                            <li class="footer__link__item">    
+                                Минск, пл.Мира д.15
+                            </li>
+                            <li class="footer__link__item">    
+                                8(229)15-88-935
+                            </li>
+                            <li class="footer__link__item">    
+                                MatShop@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__dop__cont">
+                    <p>(c) 2021 - Наш лучший магазин</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
